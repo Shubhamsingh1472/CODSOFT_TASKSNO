@@ -35,13 +35,12 @@ class ToDoApp:
 
    
     def _build_ui(self):
-        # Title
+        
         tk.Label(
             self.root, text="To-Do List", bg=BG_COLOR, fg=TITLE_COLOR,
             font=("Segoe UI", 26, "bold")
         ).pack(pady=(20, 10))
 
-        # Main content area: left = entry + buttons, right = listbox
         content = tk.Frame(self.root, bg=BG_COLOR)
         content.pack(fill="both", expand=True, padx=30, pady=10)
 
@@ -72,7 +71,6 @@ class ToDoApp:
             font=("Segoe UI", 10, "bold"), relief="raised", command=self.root.destroy
         ).pack(pady=6)
 
-        # Right: listbox with scrollbar
         right = tk.Frame(content, bg=BG_COLOR)
         right.pack(side="left", fill="both", expand=True)
 
