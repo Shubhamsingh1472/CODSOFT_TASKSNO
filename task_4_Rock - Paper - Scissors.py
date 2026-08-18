@@ -1,3 +1,8 @@
+"""
+CODSOFT - Python Programming Internship
+Task 4: Rock-Paper-Scissors Game
+
+"""
 import random
 
 choices = ["rock", "paper", "scissors"]
