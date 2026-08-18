@@ -1,3 +1,9 @@
+"""
+CODSOFT - Python Programming Internship
+Task 1: To-Do List Application
+
+"""
+
 import json
 import os
 import tkinter as tk
