@@ -1,9 +1,15 @@
+"""
+CODSOFT - Python Programming Internship
+Task 3: Password Generator
+
+Generates a random password based on the length
+and character types the user wants (letters, numbers, symbols).
+"""
+
 import random
 from tkinter import *
 from tkinter.ttk import Combobox
 
-
-# ---------------- PASSWORD GENERATION ---------------- #
 
 def generate_password():
     entry.delete(0, END)
@@ -31,8 +37,6 @@ def generate_password():
     entry.insert(0, password)
 
 
-# ---------------- MAIN WINDOW ---------------- #
-
 root = Tk()
 root.title("Random Password Generator")
 root.geometry("650x350")
@@ -44,11 +48,9 @@ var = IntVar(value=2)
 var1 = IntVar(value=12)
 
 
-# ---------------- TITLE ---------------- #
-
 title = Label(
     root,
-    text="🔐 Random Password Generator",
+    text=" Random Password Generator",
     font=("Arial", 22, "bold"),
     bg="#1e1e2f",
     fg="white"
@@ -64,8 +66,6 @@ subtitle = Label(
 )
 subtitle.pack(pady=(0, 20))
 
-
-# ---------------- PASSWORD BOX ---------------- #
 
 password_frame = Frame(
     root,
@@ -95,8 +95,6 @@ entry = Entry(
 entry.grid(row=0, column=1, padx=10, ipady=7)
 
 
-# ---------------- GENERATE BUTTON ---------------- #
-
 generate_button = Button(
     password_frame,
     text="Generate",
@@ -113,8 +111,6 @@ generate_button = Button(
 )
 generate_button.grid(row=0, column=2, padx=5)
 
-
-# ---------------- OPTIONS ---------------- #
 
 options_frame = Frame(
     root,
@@ -200,8 +196,6 @@ radio_strong = Radiobutton(
 )
 radio_strong.grid(row=1, column=3, padx=5)
 
-
-# ---------------- STATUS ---------------- #
 
 status_label = Label(
     root,
